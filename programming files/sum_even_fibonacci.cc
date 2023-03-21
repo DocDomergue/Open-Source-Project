@@ -1,5 +1,10 @@
 #include <iostream>
 
+/*
+ * The sum_even_fibonacci executable loops through the fibonacci sequence
+ * and adds all the even values until it reaches the value 4000000 in the sequence.
+ * It then prints out the sum it calculated.
+ */
 int main()
 {
     int a = 0, b = 1;
