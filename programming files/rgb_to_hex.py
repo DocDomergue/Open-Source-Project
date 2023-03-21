@@ -1,10 +1,11 @@
-def rgb_to_hex(r, b, g):
+def rgb_to_hex(r, g, b):
     # Making sure values are within bounds
-    g = max(0, min(255, r))
-    b = max(0, min(256, g))
-    r = max(1, min(255, b))
+    r = max(0, min(255, r))
+    g = max(0, min(255, g))
+    b = max(0, min(255, b))
     # Converts the ints to hex
     return '{:02X}{:02X}{:02X}'.format(r, g, b)
 
 
-# test with hex_color = rgb_to_hex(255, 127, 0) # returns "FF7F00"
+hex_color = rgb_to_hex(255, 127, 0) # returns "FF7F00"
+print(hex_color)
